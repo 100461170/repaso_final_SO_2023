@@ -22,6 +22,7 @@ int main(int argc, char * argv[]){
     switch (pid) {
         case -1:
             perror("error al hacer el fork");
+            return -1;
 
         case 0:
             struct sigaction s1;
